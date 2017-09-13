@@ -167,6 +167,13 @@ namespace Twitterizer
         /// <value>The status text.</value>
         [DataMember, JsonProperty(PropertyName = "text")]
         public string Text { get; set; }
+		
+        /// <summary>
+        /// Gets or sets the full text of the status.
+        /// </summary>
+        /// <value>The full status text.</value>
+        [DataMember, JsonProperty(PropertyName = "full_text")]
+        public string FullText { get; set; }
 
         /// <summary>
         /// Gets or sets the user.

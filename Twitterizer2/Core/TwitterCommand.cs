@@ -167,6 +167,7 @@ namespace Twitterizer.Core
             {
                 queryParameters.Add(item.Key, item.Value);
             }
+            queryParameters.Add("tweet_mode", "extended");
 
             // Declare the variable to be returned
             twitterResponse.ResponseObject = default(T);
